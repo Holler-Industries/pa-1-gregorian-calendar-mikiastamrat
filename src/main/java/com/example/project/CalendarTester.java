@@ -5,10 +5,37 @@ public class CalendarTester {
 
 
     public static void main(String[] args) {
-
+        GregorianCalendar todaydate = new GregorianCalendar(2020, Calendar.SEPTEMBER, 23);
 
         //This constructs a GregorianCalendar object
         GregorianCalendar myCal = new GregorianCalendar();
+
+        int day = myCal.get(Calendar.DAY_OF_MONTH);
+        int month = myCal.get(Calendar.MONTH);
+        int year = myCal.get(Calendar.YEAR);
+        int dayofweek = myCal.get(Calendar.DAY_OF_WEEK);
+
+        myCal.add(Calendar.DAY_OF_MONTH,100);
+        day = myCal.get(Calendar.DAY_OF_MONTH);
+        month = myCal.get(Calendar.MONTH);
+        year = myCal.get(Calendar.YEAR);
+        dayofweek = myCal.get(Calendar.DAY_OF_WEEK);
+
+        GregorianCalendar birthdaycalendar = new GregorianCalendar(2020, Calendar.FEBRUARY, 14);
+        myCal.get(Calendar.DAY_OF_WEEK);
+
+        myCal.add(Calendar.DAY_OF_MONTH,10000);
+        day = myCal.get(Calendar.DAY_OF_MONTH);
+        month = myCal.get(Calendar.MONTH);
+        year = myCal.get(Calendar.YEAR);
+
+
+
+
+
+
+//Now cal is 10 days from today
+//Now cal is 100 days from today
 
 
         /* You can use constants with the GregorianCalendar class to refer to its various
@@ -16,6 +43,9 @@ public class CalendarTester {
          * month of the calendar.  This can be used with the .get() method to test
          * the calendar.  Consider the example:
          * */
+
+
+//Now cal is 100 days from today
 
         //Call the .get method on myCal using Calendar.DAY_OF_WEEK as the argument
 
